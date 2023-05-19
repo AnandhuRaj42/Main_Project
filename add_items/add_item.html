@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add_item</title>
+</head>
+<style type="text/css">
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  max-width: 120px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8
+
+</style>
+<body>
+<div class="card">
+  <div class="card-header">
+    <h2>Item Registration Form</h2>
+  </div>
+  <div class="card-body">
+    <form>
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="description">Description:</label></td>
+          <td><textarea id="description" name="description"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="category">Category:</label></td>
+          <td>
+            <select id="category" name="category">
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="books">Books</option>
+              <option value="home">Home</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="price">Price:</label></td>
+          <td><input type="number" id="price" name="price"></td>
+        </tr>
+        <tr>
+          <td><label for="quantity">Quantity:</label></td>
+          <td><input type="number" id="quantity" name="quantity"></td>
+        </tr>
+        <tr>
+          <td><label for="image">Image:</label></td>
+          <td><input type="file" id="image" name="image"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit">Register Item</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
