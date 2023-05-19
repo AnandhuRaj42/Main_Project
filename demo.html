@@ -1,0 +1,33 @@
+<!-- Option select -->
+<select id="optionSelect" onchange="showCheckboxes()">
+  <option value="">Select an option</option>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+<!-- Checkbox container -->
+<div id="checkboxContainer"></div>
+
+<script>
+  function showCheckboxes() {
+    // Get the option select element and checkbox container element
+    var optionSelect = document.getElementById('optionSelect');
+    var checkboxContainer = document.getElementById('checkboxContainer');
+
+    // Clear the checkbox container
+    checkboxContainer.innerHTML = '';
+
+    // Get the selected option value
+    var selectedOption = optionSelect.value;
+
+    // Display checkboxes based on the selected option
+    if (selectedOption === 'option1') {
+      checkboxContainer.innerHTML = '<input type="checkbox" name="checkbox1" value="checkbox1"> Checkbox 1<br><input type="checkbox" name="checkbox2" value="checkbox2"> Checkbox 2';
+    } else if (selectedOption === 'option2') {
+      checkboxContainer.innerHTML = '<input type="checkbox" name="checkbox3" value="checkbox3"> Checkbox 3<br><input type="checkbox" name="checkbox4" value="checkbox4"> Checkbox 4';
+    } else if (selectedOption === 'option3') {
+      checkboxContainer.innerHTML = '<input type="checkbox" name="checkbox5" value="checkbox5"> Checkbox 5<br><input type="checkbox" name="checkbox6" value="checkbox6"> Checkbox 6';
+    }
+  }
+</script>

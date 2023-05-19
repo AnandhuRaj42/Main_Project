@@ -1,0 +1,32 @@
+<style>
+
+
+.hiddentd
+{
+display:inline-block;
+    width:180px;
+    white-space: nowrap;
+    overflow:hidden !important;
+   
+}
+
+th {
+   text-align: center;
+  background-color:#2F3C7E;
+  color:white;
+  height:50px;
+
+}
+td {
+text-align:center;
+	height:50px;
+   	
+}
+table {
+	width: 100%;
+	border-color:transparent;
+	text-align:center;
+	background-color:lightcyan;
+}
+
+</style>
